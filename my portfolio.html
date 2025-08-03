@@ -58,7 +58,7 @@
             padding: 10px;
             width: 100%;
         }
-        #about, #skills,#projects,#contact{
+        #about, #skills,#projects,#contact,#interests{
             background-color: white;
             margin: 20px auto;
             padding: 2px;
@@ -89,21 +89,22 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <a href="#services">Services</a>
+        <a href="#Interests">Services</a>
     </nav>
 </header>
     <section id="about">
         <h2>Home</h2>
-        <a href="/Gideon cv.docx" download>Download My CV (PDF)</a>
         <p style="font-size: 20px; margin: 20px;"><i>Welcome to My Portfolio!
             <br>
 I'm Gideon Omwange, a passionate and dedicated educator specializing in Mathematics, Business Studies, and Computer Studies. With strong expertise in web design, ICT training, and student mentorship, I am committed to shaping future minds with knowledge and purpose.
 Explore my journey, teaching experience, and digital skills </i></p>
+ 
 
     </section>
     <section id="about">
-        <h2>About Me</h2>
+        <h2>Education background</h2>
         <p style="font-size: 20px; margin: 20px;"><i>I am a goal-oriented Kenyan educator with a Bachelor of Education Arts from Mount Kenya University, majoring in Mathematics and Business Studies. With a solid foundation in computer applications, I possess advanced skills in Microsoft Office, Web Design (HTML, CSS, JavaScript), and ICT integration in learning</i></p>
+        <a href="/Gideon cv.docx" download>Download My CV (PDF)</a>
     </section>
     <section id="skills">
         <h2>My Skills</h2>
@@ -133,9 +134,88 @@ Explore my journey, teaching experience, and digital skills </i></p>
         <p>Email: <a href="mail to: gideonnyakwaye@gmail.com>">gideonnyakwaye@gmail.com</a></p>
         <p> phone:0796958944</p>
     </section>
+    <section id="interests">
+        <h2>Technology interests</h2>
+        <pre> 
+            I am passionate about  integrating technology into education.
+            I enjoy designing websites using HTML, CSS, and JavaScript.
+            I have a strong interest in teaching computer packages and digital skills.
+            I’m keen on exploring new tech tools that support learning and productivity
+        </pre>
+    </section>
+
+    <br>
+    <form>
+        <header>Please fill in the form below for record keeping </header>
+        <fieldset>
+            <legend><b><i>To The Applicant</i></b></legend>
+            <div>
+                <br>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="first" value=""  size="25"required>
+                <input type="text" id="name" name="name" placeholder="surname" size="25">
+            </div>
+            <div>
+                <br>
+                <label for="country">Select your country</label><br>
+                <input list="country" name="country">
+                <datalist id="country">
+                    <option>Kenya</option>
+                    <option>Nigeria</option>
+                    <option>South Africa</option>
+                    <option>Ethopia</option>
+                    <option>Tanzania</option>
+                    <option>Uganda</option>
+                    <option>Somalia</option>
+                    <option>Kisii</option>
+                </datalist>
+            </div>
+            <div>
+                <p>Address</p>
+                <label for="mail"></label>
+                <input type="text" id="mail" name="mail" placeholder="street Address" size="35"><br>
+                <br>
+                <label for="dob">D.O.B</label><br>
+                <input type="date" id="dob" name="dob"><br>
+            </div>
+            <div>
+                <p>Gender</p>
+                <label for="sex">Male</label>
+                <input type="radio" id="sex" name="sex">
+                <label for="sex">Female</label>
+                <input type="radio" id="sex" name="sex"><br>
+            </div>
+            <div>
+                <br>
+                <label for="mail"></label>
+                <input type="text" id="mail" name="mail" placeholder="street Address line 2"><br>
+                <br>
+                <label for="city"></label>
+                <input type="text" id="city" name="city" placeholder="city"><br>
+                <br>
+                <label for="region"></label>
+                <input type="text" id="city" name="city" placeholder="region"><br>
+                <br>
+                <label for="zip"></label>
+                <input type="text" id="city" name="zip" placeholder="postal/ zip code"><br>
+                <br>
+                <label for="mail"> Email</label>
+                <input type="email" id="mail" name="mail" placeholder="@gmail.com" size="35">
+                <label for="no">Phone</label>
+                <input type="tel" id="no" name="no" placeholder="0712345678">
+            </div>
+        </fieldset>
+        <div>
+            <br>
+            <input type="button" value="submit">
+        <input type="reset">
+        </div>
+        <br>
+        
+    </form>
     <section>
         <footer>
-            <p> copy: 2024 Gideon Omwange. All Right Reserved</p>
+            <p> copy: 2025 Gideon Omwange. All Right Reserved</p>
         </footer>
     </section>
 </body>
