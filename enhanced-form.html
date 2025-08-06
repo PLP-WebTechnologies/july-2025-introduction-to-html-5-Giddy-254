@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+</head>
+<body>
+
+<header>
+    <h1>User Registration Form</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Instructions</h2>
+        <ul>
+            <li>Fill out all required fields marked with *</li>
+            <li>Use correct formats (e.g., email and date)</li>
+            <li>All information will be kept confidential</li>
+        </ul>
+    </section>
+
+   <section>
+    <h2>Media Example</h2>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <br>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+
+    <section>
+        <h2>User Information Form</h2>
+        <form action="/submit" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="fullname">Full Name*:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Gideon Omwange" required><br><br>
+
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" placeholder="@.com" required><br><br>
+
+                <label for="dob">Date of Birth*:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <label for="bio">Short Bio:</label><br>
+                <textarea id="bio" name="bio" placeholder="Tell us something about yourself..." rows="4" cols="50"></textarea><br><br>
+
+                <label for="readonly-info">Reference ID:</label>
+                <input type="text" id="readonly-info" value="USER123456" readonly><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Preferred Contact Method:</label><br>
+                <input type="radio" id="contact_email" name="contact" value="email" checked>
+                <label for="contact_email">Email</label><br>
+                <input type="radio" id="contact_phone" name="contact" value="phone">
+                <label for="contact_phone">Phone</label><br><br>
+
+                <label for="newsletter">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section>
+        <h2>Sample Data Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>DOB</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>vee</td>
+                    <td>vee@gmail.</td>
+                    <td>2010-05-23</td>
+                </tr>
+                <tr>
+                    <td>Giddy</td>
+                    <td>giddy@.com</td>
+                    <td>1999-07-01</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Enhanced Form Inc.</p>
+</footer>
+
+</body>
+</html>

@@ -1,3 +1,3 @@
-weight_pounds = input=('weight pounds: ')
-weight_kg = int('weight_pounds') * 0.45
+weight_lbs = input('weight in pounds')
+weight_kg = int("weight_lbs:")*20
 print(weight_kg)
